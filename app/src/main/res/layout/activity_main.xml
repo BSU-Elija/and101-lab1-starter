@@ -10,10 +10,38 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world"
+        android:text="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Hobby 1 -->
+    <TextView
+        android:id="@+id/hobby1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hobby1"
+        app:layout_constraintTop_toBottomOf="@id/hobby1Text"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Hobby 2 -->
+    <TextView
+        android:id="@+id/hobby2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hobby2"
+        app:layout_constraintTop_toBottomOf="@id/hobby1Text"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Hobby 3 -->
+    <TextView
+        android:id="@+id/hobby3Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hobby3"
+        app:layout_constraintTop_toBottomOf="@id/hobby2Text"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

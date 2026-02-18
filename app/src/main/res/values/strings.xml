@@ -2,5 +2,11 @@
     <string name="app_name">Android Hunt</string>
 
     <!-- [A] -->
-    <string name="hello_world">Hello World!</string>
+
+
+    <string name="name">Elija</string>
+    <string name="hobby1">Playing basketball</string>
+    <string name="hobby2">Gaming</string>
+    <string name="hobby3">Listening to music</string>
+
 </resources>

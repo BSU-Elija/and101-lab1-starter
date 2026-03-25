@@ -1,37 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- [P] -->
+    <!-- Name -->
     <TextView
+        android:id="@+id/profileName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Elija Modesto"
+        android:textSize="22sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Bio -->
+    <TextView
+        android:id="@+id/profileBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Science student at Bowie State. I enjoy coding, cybersecurity, and building apps."
+        app:layout_constraintTop_toBottomOf="@id/profileName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp" />
 
     <!-- Hobby 1 -->
     <TextView
         android:id="@+id/hobby1Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hobby1"
-        app:layout_constraintTop_toBottomOf="@id/hobby1Text"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Coding"
+        app:layout_constraintTop_toBottomOf="@id/profileBio"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
 
     <!-- Hobby 2 -->
     <TextView
         android:id="@+id/hobby2Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hobby2"
+        android:text="Working Out"
         app:layout_constraintTop_toBottomOf="@id/hobby1Text"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -40,7 +51,7 @@
         android:id="@+id/hobby3Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hobby3"
+        android:text="Gaming"
         app:layout_constraintTop_toBottomOf="@id/hobby2Text"
         app:layout_constraintStart_toStartOf="parent" />
 
